@@ -683,7 +683,7 @@
   .contact-pill:hover { border-color: var(--accent); color: var(--accent); }
   .contact-pill .cicon { font-size: 1.1rem; }
 
-  /* TESTIMONIALS placeholder area */
+  /* CONTACT */
   #contact {
     padding: 100px 60px;
   }
@@ -899,7 +899,6 @@
     letter-spacing: 0.1em;
     text-transform: uppercase;
     margin-bottom: 18px;
-    display: inline-flex;
   }
   .notes-tabs {
     display: flex;
@@ -1290,99 +1289,99 @@
     <div class="section-label reveal">Study Material</div>
     <h2 class="section-title reveal">Free Notes & Resources</h2>
     <p class="notes-intro reveal">
-      Access chapter-wise notes, formula sheets, and solved examples — all completely free. 
+      Access chapter-wise notes, formula sheets, and solved examples — all completely free.
       Click any topic below to open it directly in Google Drive. No login required.
     </p>
 
     <div class="notes-tabs reveal">
-      <button class="notes-tab active" onclick="switchTab('class9')">Class 9 — Physics &amp; Chemistry</button>
-      <button class="notes-tab" onclick="switchTab('class10')">Class 10 — Physics &amp; Chemistry</button>
-      <button class="notes-tab" onclick="switchTab('class11')">Class 11 Physics</button>
-      <button class="notes-tab" onclick="switchTab('class12')">Class 12 Physics</button>
-      <button class="notes-tab" onclick="switchTab('jeeneet')">JEE / NEET Physics</button>
+      <button class="notes-tab active" onclick="switchTab('class9', event)">Class 9 — Physics &amp; Chemistry</button>
+      <button class="notes-tab" onclick="switchTab('class10', event)">Class 10 — Physics &amp; Chemistry</button>
+      <button class="notes-tab" onclick="switchTab('class11', event)">Class 11 Physics</button>
+      <button class="notes-tab" onclick="switchTab('class12', event)">Class 12 Physics</button>
+      <button class="notes-tab" onclick="switchTab('jeeneet', event)">JEE / NEET Physics</button>
     </div>
 
-    <!-- CLASS 9 — Physics & Chemistry only -->
+    <!-- CLASS 9 -->
     <div class="notes-panel active" id="panel-class9">
-      <a class="note-card" href="https://drive.google.com/drive/folders/YOUR_FOLDER_ID" target="_blank" style="grid-column:1/-1;border-color:rgba(59,130,246,0.4);background:rgba(59,130,246,0.05);">
+      <a class="note-card" href="https://drive.google.com/drive/folders/14W2nXas61DveGokRocOeDHIBs4FxIHNJ?usp=sharing" target="_blank" style="grid-column:1/-1;border-color:rgba(59,130,246,0.4);background:rgba(59,130,246,0.05);">
         <div class="note-icon ni-blue">📦</div>
         <div><div class="note-title">Class 9 — Physics &amp; Chemistry Full Bundle <span class="note-free">FREE</span></div><div class="note-meta">All Physics &amp; Chemistry chapters · Complete Google Drive Folder</div></div>
       </a>
     </div>
 
-    <!-- CLASS 10 — Physics & Chemistry only -->
+    <!-- CLASS 10 -->
     <div class="notes-panel" id="panel-class10">
-      <a class="note-card" href="https://drive.google.com/drive/folders/YOUR_FOLDER_ID" target="_blank" style="grid-column:1/-1;border-color:rgba(59,130,246,0.4);background:rgba(59,130,246,0.05);">
+      <a class="note-card" href="https://drive.google.com/drive/folders/1cuBoowEHh7PjlHAYOw5P_RfYiBoKhYFU?usp=sharing" target="_blank" style="grid-column:1/-1;border-color:rgba(59,130,246,0.4);background:rgba(59,130,246,0.05);">
         <div class="note-icon ni-blue">📦</div>
         <div><div class="note-title">Class 10 — Physics &amp; Chemistry Full Bundle <span class="note-free">FREE</span></div><div class="note-meta">All Physics &amp; Chemistry chapters · Complete Google Drive Folder</div></div>
       </a>
     </div>
 
-    <!-- CLASS 11 Physics -->
+    <!-- CLASS 11 -->
     <div class="notes-panel" id="panel-class11">
-      <a class="note-card" href="https://drive.google.com/drive/folders/YOUR_FOLDER_ID" target="_blank" style="grid-column:1/-1;border-color:rgba(59,130,246,0.4);background:rgba(59,130,246,0.05);">
+      <a class="note-card" href="https://drive.google.com/drive/folders/1MrdSnr2fbLbBXOU-_TNv4MDTeLA4Temk?usp=sharing" target="_blank" style="grid-column:1/-1;border-color:rgba(59,130,246,0.4);background:rgba(59,130,246,0.05);">
         <div class="note-icon ni-blue">📦</div>
         <div><div class="note-title">Class 11 Physics — All 15 Chapters Bundle <span class="note-free">FREE</span></div><div class="note-meta">Complete NCERT Class 11 Physics · Full Google Drive Folder</div></div>
       </a>
     </div>
 
-    <!-- CLASS 12 Physics -->
+    <!-- CLASS 12 -->
     <div class="notes-panel" id="panel-class12">
-      <a class="note-card" href="https://drive.google.com/drive/folders/YOUR_FOLDER_ID" target="_blank" style="grid-column:1/-1;border-color:rgba(59,130,246,0.4);background:rgba(59,130,246,0.05);">
+      <a class="note-card" href="https://drive.google.com/drive/folders/1b3hW-rAjuwwj-s3lP_4lfQBEliCZF4g5?usp=sharing" target="_blank" style="grid-column:1/-1;border-color:rgba(59,130,246,0.4);background:rgba(59,130,246,0.05);">
         <div class="note-icon ni-blue">📦</div>
         <div><div class="note-title">Class 12 Physics — All 14 Chapters Bundle <span class="note-free">FREE</span></div><div class="note-meta">Complete NCERT Class 12 Physics · Full Google Drive Folder</div></div>
       </a>
     </div>
 
-    <!-- JEE / NEET -->
+    <!-- JEE / NEET — no folder link provided, keeping as WhatsApp CTA -->
     <div class="notes-panel" id="panel-jeeneet">
-      <a class="note-card" href="https://drive.google.com/drive/folders/YOUR_FOLDER_ID" target="_blank">
+      <a class="note-card" href="https://wa.me/917627872055?text=Hi%20Sir!%20I%20need%20JEE%20Physics%20Master%20Formula%20Sheet" target="_blank">
         <div class="note-icon ni-orange">📋</div>
         <div><div class="note-title">JEE Physics — Master Formula Sheet <span class="note-free">FREE</span></div><div class="note-meta">All chapters · Quick revision PDF for JEE Main & Advanced</div></div>
       </a>
-      <a class="note-card" href="https://drive.google.com/drive/folders/YOUR_FOLDER_ID" target="_blank">
+      <a class="note-card" href="https://wa.me/917627872055?text=Hi%20Sir!%20I%20need%20Kinematics%20%26%20Projectile%20JEE%20notes" target="_blank">
         <div class="note-icon ni-blue">🎯</div>
         <div><div class="note-title">Kinematics & Projectile — JEE Level <span class="note-free">FREE</span></div><div class="note-meta">Advanced problems, graph interpretation, relative motion</div></div>
       </a>
-      <a class="note-card" href="https://drive.google.com/drive/folders/YOUR_FOLDER_ID" target="_blank">
+      <a class="note-card" href="https://wa.me/917627872055?text=Hi%20Sir!%20I%20need%20Rotational%20Mechanics%20JEE%20notes" target="_blank">
         <div class="note-icon ni-purple">🌀</div>
         <div><div class="note-title">Rotational Mechanics — JEE Level <span class="note-free">FREE</span></div><div class="note-meta">MOI, rolling, angular momentum conservation, PYQs 2015–2024</div></div>
       </a>
-      <a class="note-card" href="https://drive.google.com/drive/folders/YOUR_FOLDER_ID" target="_blank">
+      <a class="note-card" href="https://wa.me/917627872055?text=Hi%20Sir!%20I%20need%20SHM%20%26%20Waves%20JEE%20notes" target="_blank">
         <div class="note-icon ni-cyan">🌊</div>
         <div><div class="note-title">SHM & Waves — JEE Level <span class="note-free">FREE</span></div><div class="note-meta">High difficulty numericals, beats, Doppler, standing waves</div></div>
       </a>
-      <a class="note-card" href="https://drive.google.com/drive/folders/YOUR_FOLDER_ID" target="_blank">
+      <a class="note-card" href="https://wa.me/917627872055?text=Hi%20Sir!%20I%20need%20Electrostatics%20%26%20Capacitors%20JEE%20notes" target="_blank">
         <div class="note-icon ni-orange">⚡</div>
         <div><div class="note-title">Electrostatics & Capacitors — JEE Level <span class="note-free">FREE</span></div><div class="note-meta">Field lines, Gauss law applications, complex capacitor circuits</div></div>
       </a>
-      <a class="note-card" href="https://drive.google.com/drive/folders/YOUR_FOLDER_ID" target="_blank">
+      <a class="note-card" href="https://wa.me/917627872055?text=Hi%20Sir!%20I%20need%20Magnetism%20%26%20EMI%20JEE%20notes" target="_blank">
         <div class="note-icon ni-blue">🧲</div>
         <div><div class="note-title">Magnetism & EMI — JEE Level <span class="note-free">FREE</span></div><div class="note-meta">Magnetic force, Faraday's law, motional EMF, advanced problems</div></div>
       </a>
-      <a class="note-card" href="https://drive.google.com/drive/folders/YOUR_FOLDER_ID" target="_blank">
+      <a class="note-card" href="https://wa.me/917627872055?text=Hi%20Sir!%20I%20need%20Optics%20JEE%20notes" target="_blank">
         <div class="note-icon ni-purple">💡</div>
         <div><div class="note-title">Optics — Ray & Wave — JEE Level <span class="note-free">FREE</span></div><div class="note-meta">YDSE, diffraction, TIR, lens combinations, prism problems</div></div>
       </a>
-      <a class="note-card" href="https://drive.google.com/drive/folders/YOUR_FOLDER_ID" target="_blank">
+      <a class="note-card" href="https://wa.me/917627872055?text=Hi%20Sir!%20I%20need%20Modern%20Physics%20JEE%20notes" target="_blank">
         <div class="note-icon ni-cyan">⚛️</div>
         <div><div class="note-title">Modern Physics — JEE Level <span class="note-free">FREE</span></div><div class="note-meta">Photoelectric, Bohr model, radioactivity, nuclear reactions</div></div>
       </a>
-      <a class="note-card" href="https://drive.google.com/drive/folders/YOUR_FOLDER_ID" target="_blank">
+      <a class="note-card" href="https://wa.me/917627872055?text=Hi%20Sir!%20I%20need%20NEET%20High%20Weightage%20Chapter%20List" target="_blank">
         <div class="note-icon ni-orange">🏥</div>
         <div><div class="note-title">NEET — High Weightage Chapter List <span class="note-free">FREE</span></div><div class="note-meta">Priority topics with weightage data from 2018–2024 NEET papers</div></div>
       </a>
-      <a class="note-card" href="https://drive.google.com/drive/folders/YOUR_FOLDER_ID" target="_blank">
+      <a class="note-card" href="https://wa.me/917627872055?text=Hi%20Sir!%20I%20need%20NEET%20PYQ%20Physics%202018-2024%20Solved" target="_blank">
         <div class="note-icon ni-blue">📝</div>
         <div><div class="note-title">NEET PYQ Physics 2018–2024 Solved <span class="note-free">FREE</span></div><div class="note-meta">All previous year questions with detailed solutions</div></div>
       </a>
-      <a class="note-card" href="https://drive.google.com/drive/folders/YOUR_FOLDER_ID" target="_blank">
+      <a class="note-card" href="https://wa.me/917627872055?text=Hi%20Sir!%20I%20need%20NEET%20Assertion%20%26%20Reason%20Questions" target="_blank">
         <div class="note-icon ni-purple">🧩</div>
         <div><div class="note-title">NEET — Assertion & Reason Questions <span class="note-free">FREE</span></div><div class="note-meta">Chapter-wise A&R bank for Physics</div></div>
       </a>
-      <a class="note-card" href="https://drive.google.com/drive/folders/YOUR_FOLDER_ID" target="_blank" style="border-color:rgba(251,146,60,0.4);background:rgba(251,146,60,0.04);">
+      <a class="note-card" href="https://wa.me/917627872055?text=Hi%20Sir!%20I%20need%20the%20JEE%20%2B%20NEET%20Full%20Physics%20Pack" target="_blank" style="border-color:rgba(251,146,60,0.4);background:rgba(251,146,60,0.04);">
         <div class="note-icon ni-orange">📦</div>
-        <div><div class="note-title">JEE + NEET Full Physics Pack <span class="note-free">FREE</span></div><div class="note-meta">All competitive exam resources · Complete Drive Folder</div></div>
+        <div><div class="note-title">JEE + NEET Full Physics Pack <span class="note-free">FREE</span></div><div class="note-meta">All competitive exam resources · Message to get full folder link</div></div>
       </a>
     </div>
 
@@ -1571,7 +1570,6 @@
       return;
     }
 
-    // Build WhatsApp message
     const waMsg = encodeURIComponent(
       `Hi Gurkirat Sir! 👋\n\n*New Enquiry from Distance Website*\n\n*Name:* ${name}\n*Phone:* ${phone}\n*Course:* ${cls}\n*Mode:* ${mode}\n*Message:* ${msg || 'No additional message'}`
     );
@@ -1580,11 +1578,11 @@
   }
 
   // Notes tab switching
-  function switchTab(id) {
+  function switchTab(id, event) {
     document.querySelectorAll('.notes-panel').forEach(p => p.classList.remove('active'));
     document.querySelectorAll('.notes-tab').forEach(t => t.classList.remove('active'));
     document.getElementById('panel-' + id).classList.add('active');
-    event.target.classList.add('active');
+    if (event && event.target) event.target.classList.add('active');
   }
 
   // Active nav link on scroll
